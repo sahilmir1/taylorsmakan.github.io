@@ -96,6 +96,7 @@ body,
     border-bottom: 1px solid rgba(0,0,0,0.2);
     width: 70%;
     font-size: 16px;
+    text-align: center;
 }
 .inputText {
     line-height: 20px;
@@ -285,6 +286,41 @@ h4 {
     margin-top: 25px;
 }
 /*--------------//--------------*/
+#contact {
+    height: 550px;
+    width: 100%;
+}
+.contactUs h1{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    
+}
+.form-group {
+    font-size: 20px;
+}
+.form-group label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.form-group textarea {
+    height: 80px;
+}
+.contactUs button{
+    font-size: 16px;
+    width: 100%;
+    border-radius: px;
+    margin-left: -14px;
+    background: #89AAE6;
+    border: none;
+}
+.row-right {
+    display: inline-block;
+}
+
 
 footer {
 	background: #222;
