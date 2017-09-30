@@ -123,11 +123,12 @@ body,
 
 .header{
 	width: 100%;
-	padding-top: 100px;
-	position: relative;
 	text-align: center;
 	z-index: 1;
 	display: block;
+    margin: auto;
+    position: fixed;
+    top: 88%;
 }
 .header ul li{
 	display: inline-block;
