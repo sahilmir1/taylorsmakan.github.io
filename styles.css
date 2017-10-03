@@ -21,7 +21,7 @@ body,
     border: none; outline: none;
     width: 5px;
     margin: 0 auto;
-     margin-right: 20px;
+    margin-right: 20px;
     text-align: left;
     font-size: 14px; color: #0d2840;
     padding: 10px;
@@ -61,6 +61,18 @@ body,
 	text-transform: uppercase;
 	text-decoration: none;
 }
+
+/*=======SLOGAN=======*/
+.slogan {
+    padding: 50px;
+    background-color: #232323;
+}
+.slogan h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
 /*=======MODAL=======*/
 .modal-header {
     border: none;
@@ -83,10 +95,13 @@ body,
     text-align: center;
 }
 .modal-body img{
+/*
     position: relative;
     left: 31%;
     padding-top: 50px;
     margin-bottom: -20px;
+*/
+    padding-top: 50px;
 }
 .input {
     height: 30px;
@@ -137,7 +152,7 @@ body,
 }
 .header ul li a{
 	display: inline-block;
-	padding: 0 30px 0 30px;
+	padding: 0 30px 0 20px;
 	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
@@ -199,17 +214,78 @@ body,
 
 /*-------------Carousel-------------*/
 .carousel-inner {
-    height: 450px
+    width: 100%;
+    background-color: #232323;
 }
 .carousel-inner .carousel-item img{
     width: 100%;
-    height: 100%;
+    height: 450px;
+    padding: 0 280px 50px 280px;
+}
+.carousel-indicators li {
+    position: absolute;
+    left: 9%;
+    height: 5px;
+}
+.carousel-indicators li.active {
+   height: 5px;
+}
+.carousel-caption {
+   position: relative;
+    top: 50%;
+    width: 30%;
+    margin-left: 150px;
+}
+.carousel-caption h3 {
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
+.carousel-caption button{
+    border-radius: 5px;
+    margin-left: -70%;
+}
+.carousel-caption button a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+/*=======RANDOMIZER========*/
+.randomizer {
+    background-color: darksalmon;
+}
+.randomizer h2 {
+    text-align: center;
+    margin: -30px 0 20px 0;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.square {
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 200px;
+    padding-bottom: 200px;
+    background: url(images/logo.png) no-repeat center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: ease-in-out 300ms;
+    background-color: white;
+}
+.randbtn {
+    text-align: center;
+}
+.randbtn button {
+    width: 9em;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat';
 }
 
 
-
 /*--=========TEAM==========---*/
-section {
+section  {
 	padding-top: 100px;
     padding-bottom: 50px;
     font-family: 'Montserrat' sans-serif;
@@ -325,7 +401,7 @@ h4 {
 footer {
 	background: #222;
 	color: white;
-	text-align: center;
+/*	text-align: center;*/
 	padding: 20px;
 	font-family: Georgia, Times, serif;
 }
@@ -334,7 +410,8 @@ footer a {
 	color: hotpink;
 }
 .footer {
-	transform: translateX(82%);
+	position: relative;
+    left: 82%;
 	list-style: none;
 	display: flex;
 	padding: 0;
@@ -357,6 +434,7 @@ footer a {
 }
 .footer a:hover{
 	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none;
 }
 .footer a .fa {
 	width: 100%;
@@ -415,3 +493,70 @@ footer a {
 	}
 }
 
+/*====RESPONSIVE====*/
+@media (max-width: 400px) {
+    
+    /*=====LANDING COVER====*/
+    
+    .cover {
+        box-shadow: none;
+    }
+    .topnav {
+        display: none;
+    }
+    .header {
+        display: none;
+    }
+    .cover img {
+        width: 250px;
+        margin-top: 30%;
+        margin-left: 15%;
+    }
+    
+    /*====CAROUSEL====*/
+    
+    .carousel-inner .carousel-item img {
+        height: 300px;
+        width: 100%;
+        padding: 30px;
+    }
+    
+    /*====RANDOMIZER====*/
+    .randomizer h2 {
+        margin-top: 10px;
+    }
+    
+    /*====TEAM====*/
+    #teamName {
+        margin-top: 0;
+        width: 120%;
+        margin-left: -20px;
+    }
+    #team .col-sm-2 {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    #team .col-sm-2 .user {
+        width: 80px;
+        height: 80px;
+        margin-top: 0;
+    }
+    
+    /*====CONTACT US====*/
+    .contactUs h1 {
+        margin-top: 20px;
+    }
+    .contactUs button {
+        width: 50%;
+        margin-top: 10px;
+    }
+    .contactUs img {
+        display: none;
+    }
+    footer a {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        right: 420%;
+    }
+}
