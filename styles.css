@@ -339,7 +339,8 @@ section  {
     font-size: 22px
 }
 #team .col-sm-2 p {
-    font-size: 12px;
+    margin-top: -10px;
+    font-size: 14px;
 }
 .socialmedia {
   position: absolute;
